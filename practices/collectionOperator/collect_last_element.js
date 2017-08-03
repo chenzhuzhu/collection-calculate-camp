@@ -1,7 +1,8 @@
 'use strict';
 
 function collect_last_element(collection) {
-  //在这里写入代码
+  let i =collection.length-1;
+  return collection[i]
 }
 
 module.exports = collect_last_element;
