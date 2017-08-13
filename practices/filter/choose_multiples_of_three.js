@@ -1,8 +1,13 @@
 'use strict';
 
 function choose_multiples_of_three(collection) {
-
-  //在这里写入代码
+  let result =[];
+  collection.map(function(item){
+    if(item%3===0){
+      result.push(item);
+    }
+  })
+  return result;
 }
 
 module.exports = choose_multiples_of_three;
