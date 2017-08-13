@@ -1,6 +1,13 @@
 'use strict';
+function toCaculate(num){
+  return num*4+1
+}
 var map_to_four_multiples_add_one = function(collection){
-  return [5,9,13,17,21];
+  let result=[];
+  collection.map(function(item){
+    result.push(toCaculate(item))
+  })
+  return result
 };
 
 module.exports = map_to_four_multiples_add_one;

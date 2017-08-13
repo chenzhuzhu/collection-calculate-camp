@@ -1,6 +1,9 @@
 'use strict';
+const asc =require('./rank_asc')
 var rank_desc = function(collection){
-  return [2,3,4,5,6];
+  let result;
+  result =asc(collection).reverse();
+  return result;
 };
 
 module.exports = rank_desc;
